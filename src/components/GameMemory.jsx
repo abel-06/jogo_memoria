@@ -1,14 +1,44 @@
 import React, { useEffect, useState } from 'react';
 
-import './GameMemory.module.css';
+import styles from './GameMemory.module.css';
+
+import versoCarta from '../assets/Carta_memory.webp';
+
+import Carta from './Carta';
+
+//imagens
+import Magem_1 from '../assets/Magem_1.jpg';
+import Magem_2 from '../assets/Magem_2.jpg';
+import Magem_3 from '../assets/Magem_3.jpg';
+import Magem_4 from '../assets/Magem_4.jpg';
+import Magem_5 from '../assets/Magem_5.jpg';
+import Magem_6 from '../assets/Magem_6.jpg';
+import Magem_7 from '../assets/Magem_7.jpg';
+import Magem_8 from '../assets/Magem_8.jpg';
+import Magem_9 from '../assets/Magem_9.jpg';
+import Magem_10 from '../assets/Magem_10.jpg';
+import Magem_11 from '../assets/Magem_11.jpg';
+import Magem_12 from '../assets/Magem_12.jpg';
+import Magem_13 from '../assets/Magem_13.jpg';
+import Magem_14 from '../assets/Magem_14.jpg';
+
 
 const pares = [
-  {imagem: "A"},
-  {imagem: "B"},
-  {imagem: "C"},
-  {imagem: "D"},
-  {imagem: "F"},
-  {imagem: "H"},
+  { imagem: Magem_1 },
+  { imagem: Magem_2 },
+  { imagem: Magem_3 },
+  { imagem: Magem_4 },
+  { imagem: Magem_5 },
+  { imagem: Magem_6 },
+  { imagem: Magem_7 },
+  { imagem: Magem_8 },
+  { imagem: Magem_9 },
+  { imagem: Magem_10 },
+  { imagem: Magem_11 },
+  { imagem: Magem_12 },
+  { imagem: Magem_13 },
+  { imagem: Magem_14 },
+ 
 ]
 
 function embaralhar(array) {
@@ -86,17 +116,23 @@ const GameMemory = ({setTela}) => {
     <div>
         <h1>Game Memory</h1>
         <h2>Tentativas: {tentativas}</h2>
-        <div className="tabuleiro">
+        <div className={styles.tabuleiro}>
           {cartas.map((carta, idx) => (
-            <div key={carta.id} className='carta' onClick={() => handleCartaClick(idx)}>
-              {carta.virada || carta.encontrada ? carta.imagem : "???"}
+    <Carta
+      key={carta.id}
+      virada={carta.virada}
+      encontrada={carta.encontrada}
+      imagem={carta.imagem}
+      verso={versoCarta}
+      aoClicar={() => handleCartaClick(idx)}
+    />
+    ))}
             </div>
-          ))}
+
           <div className="button">
             <button onClick={reiniciarJogo}>Reiniciar Jogo</button>
           </div>
         </div>
-    </div>
   )
 }
 

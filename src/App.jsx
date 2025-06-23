@@ -26,7 +26,7 @@ function App() {
     <div className='App'>
       {tela === 'inicio' && <TelaInicial telasJogo={telasJogo} />}
       {tela === 'jogo' && <GameMemory setTela={setTela} />}
-      {tela === 'final' && <TelaFinal setTela={telasJogo} />}
+      {tela === 'final' && <TelaFinal setTela={setTela} />}
       
     </div>
   )
