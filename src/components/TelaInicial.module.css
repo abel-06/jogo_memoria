@@ -1,8 +1,29 @@
 .inicio h1 {
-    font-size: 3.5em;
+    font-size: 2.5em;
 }
 
 .inicio p {
     margin-bottom: 2em;
     color: #fff;
+    
+}
+
+.instrucoes {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 1.5em;
+    text-align: center;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.dica {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 1.5em;
+    text-align: center;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
 }

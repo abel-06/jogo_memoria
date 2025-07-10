@@ -13,8 +13,10 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "framer-motion": "^12.19.1",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-flip-toolkit": "^7.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",

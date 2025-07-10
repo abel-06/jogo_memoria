@@ -3,8 +3,8 @@ html, body {
 }
 
 body {
-background: #1230c7;
-background: radial-gradient(circle, rgba(18, 48, 199, 1) 0%, rgba(232, 39, 78, 1) 100%);
+  background: #ed3232;
+background: radial-gradient(circle, rgba(237, 50, 50, 1) 9%, rgba(232, 72, 72, 1) 35%, rgba(237, 83, 86, 1) 60%, rgba(235, 56, 56, 1) 100%);
   margin: 0;
   padding: 0;
   font-family: Helvetica;
