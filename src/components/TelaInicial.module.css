@@ -13,9 +13,11 @@
     color: #fff;
     margin-bottom: 1.5em;
     text-align: center;
-    align-items: left;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    padding: 0 15em;
+    margin: 25px 0;
 }
 
 .dica {
@@ -23,7 +25,7 @@
     color: #fff;
     margin-bottom: 1.5em;
     text-align: center;
-    align-items: left;
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
